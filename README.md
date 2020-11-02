@@ -17,7 +17,7 @@ The graph files should have the following format. See the `Test` directory for e
 
 The vertices of the graph are represented by a set V = {0, ..., `num_vertices` - 1}. A `Graph` is represented as an `Edge` set, where each `Edge` is given by an *unordered* pair of elements from V. That is, two edges are the same if they have the same incident vertices, regardless of how those vertices were designated as vertex 1 and 2.
 
-A permutation p of the set V transforms an `Edge` e = (a, b) into p(e) = (p(a), p(b)). We can extend this permutation of p to a `Graph` g by taking the pointwise transformation of the edges of g. That is, the edges of E(p(g)) = {p(e) : e in E(g)}.
+A permutation p of the set V transforms an `Edge` e = (a, b) into p(e) = (p(a), p(b)). We can extend this permutation of p to a `Graph` g by taking the pointwise transformation of the edges of g. That is, E(p(g)) = p(E(g)) = {p(e) : e in E(g)}.
 
 ## Algorithm
 
